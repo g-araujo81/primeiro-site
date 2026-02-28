@@ -26,7 +26,7 @@
         <!-- img src inserir imagem ao site, colocar o endereço, alt é a alternativa caso apresente erro, title é o título da imagem (aparece quando colocar o mouse sobre a imagem) -->
         <article> <!-- Inserir texto ao site -->
             <p><!-- Serve para inserir parágrafos -->
-                Olá! Eu sou Gustavo, sou desenvolvedor web. Primeiro teste de alteração.
+                Olá! Eu sou Gustavo, sou desenvolvedor web...
             </p>
         </article>
         <aside>
@@ -64,10 +64,38 @@
 
             <p>Tem algum projeto em mente? Entre em contato</p>
 
-            <address>
-                E-mail: <a href="mailto:gustavo@gustavo.com.br">gustavo@gustavo.com.br</a><br> <!-- a href hiperlink para direcionar para o app de e-mail e ou telefone -->
-                Telefone: <a href="+554700000-0000">(47) 00000-0000</a> <!-- br é para quebra de linha -->
-            </address>
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro!</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
 
         </section>
     </footer> <!-- Roda pé -->
